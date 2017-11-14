@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-helloworld
+  labels:
+    app: helloworld
+spec:
+  containers:
+  - name: container-docker-node-demo
+    image: taupoali/docker-node-demo
+    ports:
+    - name: nodejs-port
+      containerPort: 3000
+      hostPort: 3000

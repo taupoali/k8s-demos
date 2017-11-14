@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-helloworld
+  labels:
+    app: helloworld
+spec:
+  containers:
+  - name: container-docker-node-demo
+    image: taupoali/docker-node-demo
+    volumeMounts:
+    - mountPath: "/k8persist"
+      name: mypd
+    ports:
+    - name: nodejs-port
+      containerPort: 3000
+  volumes:
+    - name: mypd
+      persistentVolumeClaim:
+        claimName: myclaim 
+
