@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: container-docker-node-demo
-    image: taupoali/docker-node-demo
+    image: hodei/sample-service
     ports:
     - name: nodejs-port
       containerPort: 3000
