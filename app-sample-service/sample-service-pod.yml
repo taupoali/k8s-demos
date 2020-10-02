@@ -1,14 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pod-helloworld
+  name: pod-sample-service
   labels:
-    app: helloworld
+    app: sample-service
 spec:
   containers:
-  - name: container-docker-node-demo
+  - name: sample-service
     image: hodei/sample-service
     ports:
     - name: nodejs-port
-      containerPort: 3000
-      hostPort: 3000
+      containerPort: 8080
