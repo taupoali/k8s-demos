@@ -1,5 +1,5 @@
 # k8s-demos
 Demo YAML files for creating K8s resources
-pod-3000 creates a pod based on dockerhub container image taupoali/docker-node-demo
-rc-3000 creates a replication controller based on same image
-The container image references has a listener on TCP:3000 which simply returns "Hello World"
+/app-hello-world/ is a simple node app that responds with usual greeting
+/app-picard/ is a single page web app which congratulates the operator
+/app-sample-service/ is a http app which provides increment and decrement functions with PUT operations to /inc and /dec 
