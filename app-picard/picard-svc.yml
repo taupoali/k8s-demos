@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: service-testnodeapp
+  name: service-picard-demo
   labels: 
-    app: testnodeapp
+    app: picard-demo
 spec:
   type: NodePort
   ports:
