@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-testnodeapp
+  labels:
+    app: testnodeapp
+spec:
+  containers:
+  - name: testnodeapp
+    image: hodei/testnodeapp
+    ports:
+    - name: nodeappport
+      containerPort: 3000
+
+
+
+  
